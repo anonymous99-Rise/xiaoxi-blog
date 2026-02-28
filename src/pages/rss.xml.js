@@ -12,7 +12,7 @@ export async function GET(context) {
       title: post.data.title_zh || post.data.title_en || post.id,
       pubDate: new Date(post.data.date),
       description: post.data.preview_zh || post.data.preview_en || '',
-      link: `/${post.data.slug || post.id.replace(/\.md$/, '')}/`,
+      link: `${context.site}${context.base}/${post.data.slug || post.id.replace(/\.md$/, '')}/`,
     })),
     customData: `<language>zh-cn</language>`,
   });
