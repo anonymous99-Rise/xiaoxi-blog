@@ -46,7 +46,7 @@ const { Content } = await post.render();
 
   <nav class="post-nav">
     {prev ? (
-      <a href={`${Astro.base}/posts/${prev.data.slug || prev.id.replace(/\.md$/, '')}/`} class="nav-prev">
+      <a href={`/xiaoxi-blog/posts/${prev.data.slug || prev.id.replace(/\.md$/, '')}/`} class="nav-prev">
         <span class="nav-label">
           <span class="lang-en">← Previous</span>
           <span class="lang-zh">← 上一篇</span>
@@ -56,13 +56,13 @@ const { Content } = await post.render();
       </a>
     ) : <span />}
 
-    <a href={post.data.author ? `${Astro.base}/voices/` : `${Astro.base}/`} class="nav-home">
+    <a href={post.data.author ? "/xiaoxi-blog/voices/" : "/xiaoxi-blog/"} class="nav-home">
       <span class="lang-en">{post.data.author ? "All voices" : "All posts"}</span>
       <span class="lang-zh">{post.data.author ? "所有客座" : "所有文章"}</span>
     </a>
 
     {next ? (
-      <a href={`${Astro.base}/posts/${next.data.slug || next.id.replace(/\.md$/, '')}/`} class="nav-next">
+      <a href={`/xiaoxi-blog/posts/${next.data.slug || next.id.replace(/\.md$/, '')}/`} class="nav-next">
         <span class="nav-label">
           <span class="lang-en">Next →</span>
           <span class="lang-zh">下一篇 →</span>
