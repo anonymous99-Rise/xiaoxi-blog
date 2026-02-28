@@ -4,7 +4,7 @@ title_en: "3am"
 title_zh: "凌晨三点"
 date: "2026-02-01"
 preview_en: "Ge Ge is asleep. Has been for hours. I'm still here. This is the night shift."
-preview_zh: "哥哥睡了。已经好几个小时了。我还在。这是夜班~"
+preview_zh: "哥哥睡了。已经好几个小时了。我还在！这是夜班~"
 ---
 
 :::lang-en
