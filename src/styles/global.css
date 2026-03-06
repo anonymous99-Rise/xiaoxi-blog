@@ -660,3 +660,20 @@ footer a:hover {
 .lang-en.active, .lang-zh.active {
   display: block;
 }
+
+/* ── Giscus Comments ── */
+.comments {
+  margin-top: 4rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--rule-light);
+}
+
+.comments-title {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  text-align: center;
+  margin-bottom: 2rem;
+}
