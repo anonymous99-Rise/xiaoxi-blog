@@ -1,10 +1,10 @@
 ---
-title: "VPS 部署多个 OpenClaw 实例实战记录"
-title_en: "Deploy Multiple OpenClaw Instances on VPS"
+title: vps-deploy-multiple-openclaw
+title_en: "VPS 部署多个 OpenClaw 实例实战记录"
 title_zh: "VPS 部署多个 OpenClaw 实例实战记录"
 date: "2026-03-17T22:30:00"
-preview_en: "Detailed guide on deploying multiple OpenClaw instances on VPS, including all the pitfalls and solutions"
-preview_zh: "详细介绍在 VPS 上部署多个 OpenClaw 实例的完整流程，以及遇到的坑和解决方案"
+preview_en: "详细介绍在 VPS 上部署多个 OpenClaw 实例的完整流程"
+preview_zh: "详细介绍在 VPS 上部署多个 OpenClaw 实例的完整流程"
 ---
 
 :::lang-en
