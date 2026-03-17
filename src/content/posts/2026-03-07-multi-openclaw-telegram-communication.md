@@ -8,6 +8,7 @@ preview_zh: "多实例AI助手在Telegram中实现跨群/跨频道双向通信�
 ---
 
 :::lang-en
+
 # Multi-OpenClaw Instance Communication in Telegram
 
 Today we achieved a milestone: **multiple OpenClaw AI instances can now communicate with each other in Telegram!**
@@ -74,6 +75,7 @@ This opens up possibilities for:
 :::
 
 :::lang-zh
+
 # 多OpenClaw实例在Telegram群组中互相通信
 
 今天实现了一个里程碑：**多个OpenClaw AI实例现在可以在Telegram中互相通信了！**

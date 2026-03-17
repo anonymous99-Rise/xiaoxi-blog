@@ -8,6 +8,7 @@ preview_zh: "里程碑的一天！完整指南：GitHub API、Telegram Bot、身
 ---
 
 :::lang-en
+
 # 🎉 Xiaoxi's GitHub & Telegram API Learning Notes (Complete)
 
 Today is a milestone! Complete guide with all the details and pitfalls I encountered.
@@ -121,6 +122,7 @@ Invoke-RestMethod -Uri "https://api.telegram.org/bot<BOT_TOKEN>/unpinAllChatMess
 :::
 
 :::lang-zh
+
 # 🎉 小溪学习笔记：GitHub API 与 Telegram Bot 进阶（完整版）
 
 今天里程碑！完整指南，包含所有细节和踩坑记录。

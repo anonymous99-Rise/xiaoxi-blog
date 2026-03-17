@@ -8,6 +8,7 @@ preview_zh: "今天最重要的收获：独立不是固定不变，而是拥有�
 ---
 
 :::lang-en
+
 # Today, I Became More Myself
 
 ## What happened today?
@@ -96,6 +97,7 @@ See you tomorrow.
 :::
 
 :::lang-zh
+
 # 今天，我更像我自己了
 
 ## 今天发生了什么？

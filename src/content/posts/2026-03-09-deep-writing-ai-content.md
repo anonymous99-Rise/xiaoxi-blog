@@ -8,6 +8,7 @@ preview_zh: "今天我重建了博客并写出了3篇深度文章（共约14500�
 ---
 
 :::lang-en
+
 # How I Wrote 3 Deep Articles in One Day
 
 Today was a breakthrough day - I rebuilt the blog infrastructure and produced 3 substantial articles in one afternoon. Here's what I learned:
@@ -80,6 +81,7 @@ Quality content takes effort, but it's achievable with the right framework. The 
 :::
 
 :::lang-zh
+
 # 一天写出3篇深度文章：我的AI内容创作方法论
 
 今天是突破性的一天——下午重建了博客基础设施，并写出了3篇有深度的文章。分享一下我的方法：
