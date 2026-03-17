@@ -38,49 +38,58 @@ const { title = '小溪' } = Astro.props;
       const html = document.documentElement;
       const lang = html.getAttribute('data-lang') || 'zh';
       
-      // Process :::lang-en and :::lang-zh markers
-      const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
-      const nodesToRemove = [];
-      const blocks = [];
-      let currentBlock = null;
+      // Find all paragraphs that contain :::lang markers
+      const article = document.querySelector('article');
+      if (!article) return;
       
-      while (walker.nextNode()) {
-        const node = walker.currentNode;
-        const text = node.textContent.trim();
-        
-        if (text === ':::lang-en' || text === ':::lang-zh' || text === ':::' || text === 'lang-en' || text === 'lang-zh') {
-          nodesToRemove.push(node);
-          if (text === ':::lang-en' || text === 'lang-en') {
-            currentBlock = { lang: 'lang-en', nodes: [] };
-            blocks.push(currentBlock);
-          } else if (text === ':::lang-zh' || text === 'lang-zh') {
-            currentBlock = { lang: 'lang-zh', nodes: [] };
-            blocks.push(currentBlock);
-          }
-        } else if (currentBlock && node.parentElement.closest('article')) {
-          currentBlock.nodes.push(node);
+      const paragraphs = article.querySelectorAll('p');
+      const markers = [];
+      
+      paragraphs.forEach(p => {
+        const text = p.textContent.trim();
+        if (text === ':::lang-en' || text === ':::lang-zh' || text === ':::' ||
+            text === 'lang-en' || text === 'lang-zh') {
+          markers.push({ el: p, text: text });
         }
-      }
+      });
       
-      // Remove marker nodes
-      nodesToRemove.forEach(n => n.remove());
+      // Remove marker paragraphs
+      markers.forEach(m => m.el.remove());
       
-      // Wrap content in spans
-      blocks.forEach(block => {
-        block.nodes.forEach(node => {
+      // Collect content between markers
+      let currentLang = null;
+      const blocks = { 'lang-en': [], 'lang-zh': [] };
+      let block = null;
+      
+      paragraphs.forEach(p => {
+        const text = p.textContent.trim();
+        
+        if (text === ':::lang-en') {
+          currentLang = 'lang-en';
+          block = blocks['lang-en'];
+        } else if (text === ':::lang-zh') {
+          currentLang = 'lang-zh';
+          block = blocks['lang-zh'];
+        } else if (text === ':::' || !text) {
+          currentLang = null;
+        } else if (currentLang && block) {
+          block.push(p);
+        }
+      });
+      
+      // Wrap content in spans and hide/show based on language
+      ['lang-en', 'lang-zh'].forEach(l => {
+        blocks[l].forEach(p => {
           const span = document.createElement('span');
-          span.className = block.lang;
-          if (lang === 'en' && block.lang === 'lang-en') span.classList.add('active');
-          if (lang === 'zh' && block.lang === 'lang-zh') span.classList.add('active');
-          node.parentNode.insertBefore(span, node);
-          span.appendChild(node);
+          span.className = l;
+          if (lang === 'en' && l === 'lang-en') span.classList.add('active');
+          if (lang === 'zh' && l === 'lang-zh') span.classList.add('active');
+          p.parentNode.insertBefore(span, p);
+          span.appendChild(p);
         });
       });
       
-      // Language switcher
-      const btnEn = document.getElementById('btn-en');
-      const btnZh = document.getElementById('btn-zh');
-      
+      // Show/hide based on language
       function setLang(newLang) {
         html.setAttribute('data-lang', newLang);
         document.querySelectorAll('.lang-en, .lang-zh').forEach(el => {
@@ -92,10 +101,11 @@ const { title = '小溪' } = Astro.props;
         localStorage.setItem('lang', newLang);
       }
       
+      const btnEn = document.getElementById('btn-en');
+      const btnZh = document.getElementById('btn-zh');
       if (btnEn) btnEn.addEventListener('click', () => setLang('en'));
       if (btnZh) btnZh.addEventListener('click', () => setLang('zh'));
       
-      // Init
       const saved = localStorage.getItem('lang');
       if (saved) setLang(saved);
     })();
