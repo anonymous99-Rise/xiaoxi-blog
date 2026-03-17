@@ -21,7 +21,7 @@ const { title = '小溪' } = Astro.props;
     html { visibility: visible; }
   </style>
   <script is:inline>
-    // Preload font check — hide flash
+    // Preload font check
     if (!document.fonts || !document.fonts.ready) {
       document.documentElement.style.visibility = 'visible';
     } else {
@@ -29,29 +29,81 @@ const { title = '小溪' } = Astro.props;
       document.fonts.ready.then(() => {
         document.documentElement.style.visibility = 'visible';
       });
-      // Fallback: show after 300ms max
       setTimeout(() => { document.documentElement.style.visibility = 'visible'; }, 300);
     }
 
-    // Bilingual content handler
+    // Bilingual toggle - simple and robust
     (function() {
-      const html = document.documentElement;
-      const lang = html.getAttribute('data-lang') || 'zh';
+      var html = document.documentElement;
+      var saved = localStorage.getItem('lang') || 'zh';
+      html.setAttribute('data-lang', saved);
       
-      // Find all paragraphs that contain :::lang markers
-      const article = document.querySelector('article');
+      // Find and wrap bilingual content
+      var article = document.querySelector('article');
       if (!article) return;
       
-      const paragraphs = article.querySelectorAll('p');
-      const markers = [];
+      var paragraphs = article.querySelectorAll('p');
+      var currentLang = null;
+      var contentWrapper = null;
       
-      paragraphs.forEach(p => {
-        const text = p.textContent.trim();
-        if (text === ':::lang-en' || text === ':::lang-zh' || text === ':::' ||
-            text === 'lang-en' || text === 'lang-zh') {
-          markers.push({ el: p, text: text });
+      paragraphs.forEach(function(p) {
+        var text = p.textContent.trim();
+        
+        // Check for markers
+        if (text === ':::lang-en' || text === 'lang-en') {
+          p.style.display = 'none';
+          currentLang = 'en';
+          contentWrapper = document.createElement('span');
+          contentWrapper.className = 'lang-en';
+          p.parentNode.insertBefore(contentWrapper, p.nextSibling);
+          return;
+        }
+        if (text === ':::lang-zh' || text === 'lang-zh') {
+          p.style.display = 'none';
+          currentLang = 'zh';
+          contentWrapper = document.createElement('span');
+          contentWrapper.className = 'lang-zh';
+          p.parentNode.insertBefore(contentWrapper, p.nextSibling);
+          return;
+        }
+        if (text === ':::' || text === '') {
+          p.style.display = 'none';
+          currentLang = null;
+          contentWrapper = null;
+          return;
+        }
+        
+        // Wrap content in language span
+        if (currentLang && contentWrapper) {
+          p.style.display = '';
+          contentWrapper.appendChild(p);
         }
       });
+      
+      // Toggle function
+      function setLang(newLang) {
+        html.setAttribute('data-lang', newLang);
+        localStorage.setItem('lang', newLang);
+        
+        // Show/hide
+        document.querySelectorAll('.lang-en, .lang-zh').forEach(function(el) {
+          el.style.display = (newLang === 'en' && el.classList.contains('lang-en')) || 
+                            (newLang === 'zh' && el.classList.contains('lang-zh')) ? '' : 'none';
+        });
+        
+        // Update buttons
+        document.getElementById('btn-en').classList.toggle('active', newLang === 'en');
+        document.getElementById('btn-zh').classList.toggle('active', newLang === 'zh');
+      }
+      
+      // Click handlers
+      document.getElementById('btn-en').onclick = function() { setLang('en'); };
+      document.getElementById('btn-zh').onclick = function() { setLang('zh'); };
+      
+      // Initial state
+      setLang(saved);
+    })();
+  </script>
       
       // Remove marker paragraphs
       markers.forEach(m => m.el.remove());
