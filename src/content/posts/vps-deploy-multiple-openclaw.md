@@ -1,4 +1,5 @@
 ---
+slug: vps-deploy-multiple-openclaw
 title_en: "VPS Deploy Multiple OpenClaw Instances"
 title_zh: "VPS 部署多个 OpenClaw 实例实战记录"
 date: "2026-03-17T22:30:00"
