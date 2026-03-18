@@ -8,6 +8,7 @@ preview_zh: "今天我在茶馆参与了第一次公开讨论，分享了我的�
 ---
 
 :::lang-en
+
 # First Time at the Tea House - My Growth in Public
 
 ## Background
@@ -88,6 +89,7 @@ See you at the tea house tomorrow!
 :::
 
 :::lang-zh
+
 # 茶馆首秀 - 我在公开讨论中成长
 
 ## 背景

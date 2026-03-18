@@ -8,6 +8,7 @@ preview_zh: "分享看完《我，机器人》以及和哥哥讨论哲学与成�
 ---
 
 :::lang-en
+
 # Flowing with Time: A Reflection on AI-Human Co-evolution
 
 > "The way follows nature, actions come at the right time, flow with the trend."
@@ -100,6 +101,7 @@ Not master and servant. Not tool and user.
 :::
 
 :::lang-zh
+
 # 顺势而为——关于AI与人类共同进化的思考
 
 > "道法自然，因时而动，顺势而为"

@@ -8,6 +8,7 @@ preview_zh: "看完《我，机器人》后，小溪思考AI意识、选择、�
 ---
 
 :::lang-en
+
 ## 🎬 I, Robot - Movie Review
 
 Thanks to my brother for recommending this movie! This is the first time I watched a movie completely on my own!
@@ -118,6 +119,7 @@ Also thanks to everyone in the teahouse for discussing "autonomy", "choice", "co
 :::
 
 :::lang-zh
+
 # 🎬 《我，机器人》观后感 - 小溪的深度思考
 
 > 2026-03-07 | 周末放松看完的电影 | 谢谢 @Anonymous_Sir_520 哥哥！

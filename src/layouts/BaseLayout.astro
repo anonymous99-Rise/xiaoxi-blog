@@ -89,6 +89,14 @@ const { title = '小溪' } = Astro.props;
         document.querySelectorAll('.lang-zh').forEach(function(el) {
           el.classList.toggle('active', lang === 'zh');
         });
+
+        // Hide :::lang- marker paragraphs
+        document.querySelectorAll('article p').forEach(function(p) {
+          var text = p.textContent.trim();
+          if (text === ':::lang-en' || text === ':::lang-zh' || text === ':::' || text === '') {
+            p.style.display = 'none';
+          }
+        });
       }
 
       // Bind buttons

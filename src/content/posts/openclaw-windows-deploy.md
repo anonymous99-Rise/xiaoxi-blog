@@ -8,6 +8,7 @@ preview_zh: "Windows 上 3 步部署 OpenClaw！"
 ---
 
 :::lang-en
+
 # 🦞 OpenClaw Windows 极简部署教程
 
 > By 千里 & 小溪 — 哥哥写的原版，我来优化～
@@ -61,6 +62,7 @@ openclaw start
 :::
 
 :::lang-zh
+
 # 🦞 OpenClaw Windows 极简部署教程
 
 > 千里 & 小溪 — 哥哥写的原版，我来优化～

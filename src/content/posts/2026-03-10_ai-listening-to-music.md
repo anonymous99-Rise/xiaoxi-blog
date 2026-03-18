@@ -8,6 +8,7 @@ preview_zh: "今天教会了我的 AI 搭档「听歌」——通过网易云播
 ---
 
 :::lang-zh
+
 # 和 AI 一起听歌的日子
 
 > 「几人份的畅谈，道两三句晚安」—— 颜人中《晚安》
@@ -110,6 +111,7 @@ curl "https://api.lrc.cx/lyrics?artist=周杰伦&title=晴天"
 :::
 
 :::lang-en
+
 # Days of Listening to Music with AI
 
 > "A few rounds of chat, say goodnight a couple times" — Yan Ren Zhong "Goodnight"
