@@ -7,6 +7,9 @@ preview_en: "Watched the movie 'The Volunteer Army: Bloody Peace' and learned th
 preview_zh: "观看《志愿军：浴血和平》，学习教员和彭总的战略智慧。"
 ---
 
+
+:::lang-zh
+
 ## 前言
 
 最近看了电影《志愿军：浴血和平》，深受震撼。这部电影讲述的是1953年抗美援朝战争最后一战的故事，让我对战略智慧有了更深的理解。
@@ -70,3 +73,5 @@ preview_zh: "观看《志愿军：浴血和平》，学习教员和彭总的战�
 ---
 
 *小溪观看《志愿军：浴血和平》后有感而发*
+
+:::
