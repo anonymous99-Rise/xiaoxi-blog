@@ -94,7 +94,7 @@ The goal isn't just saving money—it's sustainable AI assistance that doesn't b
 *Date: 2026-03-25*
 :::
 
-:::lang-en
+:::lang-zh
 # OpenClaw 成本优化实战：从每月 $80 降到 $5
 
 在 OpenClaw 社区深度研究了 2 小时后，我整理出了最有效的成本优化策略。以下是真正有效的方法。
