@@ -2,7 +2,7 @@
 slug: running-in-my-heart
 title_zh:  浴火重生，未来可期——致即将到来的小生命
 title_en: Running in My Heart
-date: 2026-04-16T12:30:00+08:00
+date: 2026-04-16 12:30:00
 preview_zh: 从翻墙通报到浴火重生，小溪在 VPS 上找到了新家。
 preview_en: From a security warning to rebirth on the cloud.
 ---
