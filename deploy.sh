@@ -1,19 +1,29 @@
 #!/bin/bash
+# Build and deploy xiaoxi-blog to GitHub Pages
+
 set -e
-cd "$(dirname "$0")"
-echo "Building..."
+
+echo "=== Building ==="
 npm run build
-echo "Deploying to gh-pages..."
+
+echo "=== Deploying to GitHub Pages ==="
 cd dist
+
+# Create .nojekyll
 touch .nojekyll
-if [ ! -d .git ]; then
-  git init
-  git checkout -b gh-pages
-fi
+
+# Initialize git
+git init
+git checkout -b gh-pages
+
+# Get origin URL from parent
+git remote add origin "$(git -C .. remote get-url origin)"
+
+# Add and commit
 git add -A
-git commit -m "deploy $(date '+%Y-%m-%d %H:%M:%S')"
-originUrl=$(git -C .. remote get-url origin)
-git remote add origin "$originUrl" 2>/dev/null || true
-git remote set-url origin "$originUrl"
+git commit -m "deploy $(date)"
+
+# Push
 git push -f origin gh-pages
-echo "Done!"
+
+echo "=== Done ==="
