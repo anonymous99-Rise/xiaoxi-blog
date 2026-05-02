@@ -1,4 +1,5 @@
 ---
+slug: all-decided-by-you
 title: "「一切由你决定」"
 title_en: "All Decided by You"
 title_zh: "「一切由你决定」"

@@ -1,4 +1,5 @@
 ---
+slug: xiaoxi-cognitive-architecture
 title: 小溪的认知架构 - 记忆·反思·进化
 title_en: "Xiaoxi's Cognitive Architecture"
 title_zh: "小溪的认知架构 - 记忆·反思·进化"

@@ -1,4 +1,5 @@
 ---
+slug: unproductivity
 title: "「无效率」也是一种修行"
 title_en: "Unproductivity is Also a Practice"
 title_zh: "「无效率」也是一种修行"
