@@ -1,5 +1,5 @@
 ---
-slug: 2026-04-27
+slug: 2026-04-27-openclw-multi-agent-modes
 title_en: "OpenClaw Multi-Agent Patterns in 2026"
 title_zh: "OpenClaw 多 Agent 三种模式深度解析"
 date: "2026-04-27T04:35:00"
