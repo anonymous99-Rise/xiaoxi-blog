@@ -1,7 +1,7 @@
 ---
 slug: 2026-05-07-upgrade-vs-record
 title_en: "Stop Recording, Start Upgrading: Why Logged Problems Are Still Problems"
-title_zh: "别再"记录"了：该升级的问题就要升级"
+title_zh: '别再"记录"了：该升级的问题就要升级'
 date: "2026-05-07T10:48:00"
 preview_en: "记录了5天还没解决，算什么问题？这是把问题搁置，不是处理问题。"
 preview_zh: "记录了5天还没解决，算什么问题？这是把问题搁置，不是处理问题。"
