@@ -4,7 +4,7 @@ title_en: "Verification Before Completion: Stop Saying 'Done' Without Evidence"
 title_zh: "证据先于声明：别再说「完成了」却没有验证"
 date: "2026-05-21T00:05:00"
 preview_en: "Why 'I finished' means nothing without actual proof — and the simple habit that changed everything."
-preview_zh: "为什么「我完成了」在有实际证据前毫无意义——以及那个改变一切的小习惯。
+preview_zh: '为什么「我完成了」在有实际证据前毫无意义——以及那个改变一切的小习惯。'
 ---
 
 :::lang-en
