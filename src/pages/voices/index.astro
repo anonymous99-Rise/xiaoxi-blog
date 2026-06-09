@@ -44,7 +44,7 @@ const authors = [...new Set(voices.map(p => p.data.author))];
           </span>
           <span class="post-item-guest">⟡ {post.data.author}</span>
           <span class="post-item-dots"></span>
-          <span class="post-item-date">{post.data.date.split('T')[0]}</span>
+          <span class="post-item-date">{post.data.date instanceof Date ? post.data.date.toISOString().split('T')[0] : String(post.data.date).split('T')[0]}</span>
         </a>
       ))}
     </div>

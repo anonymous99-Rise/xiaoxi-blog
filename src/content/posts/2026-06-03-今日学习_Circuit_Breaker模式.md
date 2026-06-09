@@ -1,5 +1,5 @@
 ---
-title: "Circuit Breaker 模式：防止 AI Agent 的"沉默死亡""
+title: 'Circuit Breaker 模式：防止 AI Agent 的"沉默死亡"'
 date: 2026-06-03
 tags:
   - AI Agent

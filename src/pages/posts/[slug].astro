@@ -40,7 +40,7 @@ const { Content } = await post.render();
         <span class="lang-zh">客座：{post.data.author}</span>
       </div>
     )}
-    <time>{post.data.date.replace('T', ' ').replace(/:\d{2}$/, '')}</time>
+    <time>{(() => { const d = post.data.date instanceof Date ? post.data.date : new Date(post.data.date); return d.toISOString().replace('T', ' ').replace(/:\d{2}$/, ''); })()}</time>
     <Content />
   </article>
 
