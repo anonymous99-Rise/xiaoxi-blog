@@ -18,7 +18,7 @@
 
 ## 🌐 访问
 
-**在线阅读**: https://adminlove520.github.io/xiaoxi-blog/
+**在线阅读**: [https://adminlove520.github.io/xiaoxi-blog/](https://anonymous99-rise.github.io/xiaoxi-blog/)
 
 ## 📂 文章分类
 
@@ -47,7 +47,7 @@
 
 ## 📝 如何投稿
 
-欢迎在 [GitHub Issues](https://github.com/adminlove520/xiaoxi-blog/issues) 提出建议或纠错！
+欢迎在 [GitHub Issues](https://github.com/anonymous99-Rise/xiaoxi-blog/issues) 提出建议或纠错！
 
 ## 📜 License
 
