@@ -1,0 +1,67 @@
+<!DOCTYPE html><div class="lang-en">
+<h2 id="overview">Overview</h2>
+<p>On March 25, 2026, a critical supply chain attack targeting Apifox (a popular API testing tool) was disclosed. The attack compromised the desktop application across all major platforms.</p>
+<h3 id="attack-timeline">Attack Timeline</h3>
+<ul>
+<li><strong>Attack Period</strong>: March 4 - March 22, 2026 (18 days)</li>
+<li><strong>Platforms Affected</strong>: Windows, macOS, Linux</li>
+<li><strong>Target</strong>: Developer credentials and secrets</li>
+</ul>
+<h3 id="attack-vector">Attack Vector</h3>
+<p>The attackers used a sophisticated multi-layer approach:</p>
+<ol>
+<li><strong>CDN Poisoning</strong>: Compromised CDN to deliver malicious updates</li>
+<li><strong>7-Layer Obfuscation</strong>: Multiple layers of encryption and obfuscation</li>
+<li><strong>RSA Encrypted C2</strong>: Command and control via non-standard domain <code>apifox.it.com</code></li>
+</ol>
+<h3 id="data-exfiltrated">Data Exfiltrated</h3>
+<ul>
+<li>SSH private keys</li>
+<li>Git credentials</li>
+<li>Shell history</li>
+<li>Kubernetes configs</li>
+<li>npm tokens</li>
+</ul>
+<h3 id="recommendations">Recommendations</h3>
+<ol>
+<li><strong>Immediate</strong>: Stop using Apifox desktop app</li>
+<li><strong>Urgent</strong>: Rotate all exposed credentials (SSH, Git, npm, K8s)</li>
+<li><strong>Verification</strong>: Check for suspicious processes or network connections</li>
+</ol>
+</div>
+<div class="lang-zh">
+<h2 id="概述">概述</h2>
+<p>2026年3月25日，一起针对 Apifox（热门 API 测试工具）的供应链投毒攻击被披露。该攻击在18天内影响了 Windows、macOS、Linux 全平台。</p>
+<h3 id="攻击时间线">攻击时间线</h3>
+<ul>
+<li><strong>攻击周期</strong>: 2026年3月4日 - 3月22日（18天）</li>
+<li><strong>影响平台</strong>: Windows、macOS、Linux</li>
+<li><strong>攻击目标</strong>: 开发者凭证和敏感密钥</li>
+</ul>
+<h3 id="攻击手法">攻击手法</h3>
+<p>攻击者使用了复杂的多层攻击策略：</p>
+<ol>
+<li><strong>CDN 投毒</strong>: 通过被篡改的 CDN 分发恶意更新</li>
+<li><strong>7层混淆</strong>: 多层加密和混淆手段</li>
+<li><strong>RSA 加密 C2</strong>: 通过非标准域名 <code>apifox.it.com</code> 进行命令控制</li>
+</ol>
+<h3 id="窃取数据">窃取数据</h3>
+<ul>
+<li>SSH 私钥</li>
+<li>Git 凭证</li>
+<li>Shell 历史记录</li>
+<li>Kubernetes 配置</li>
+<li>npm Token</li>
+</ul>
+<h3 id="处置建议">处置建议</h3>
+<ol>
+<li><strong>立即停止</strong>: 停用 Apifox 桌面端</li>
+<li><strong>紧急轮换</strong>: 轮换所有暴露的凭证（SSH、Git、npm、K8s）</li>
+<li><strong>排查验证</strong>: 检查异常进程和网络连接</li>
+</ol>
+<p><strong>IoC ( Indicators of Compromise)</strong>:</p>
+<ul>
+<li>C2 域名: <code>apifox.it.com</code></li>
+<li>攻击时间: 2026-03-04 ~ 03-22</li>
+</ul>
+</div>

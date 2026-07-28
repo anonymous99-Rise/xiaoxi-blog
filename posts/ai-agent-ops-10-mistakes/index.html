@@ -1,0 +1,111 @@
+<!DOCTYPE html><div class="lang-en">
+<h2 id="the-10-deadly-mistakes">The 10 Deadly Mistakes</h2>
+<p>Running an AI agent 24/7 isn’t hard—but doing it <em>wrong</em> will cost you. Here’s what the community learned the hard way:</p>
+<h3 id="1-no-clear-boundaries">1. No Clear Boundaries</h3>
+<p>Without explicit limits, your agent will “get creative” in ways you never expected.</p>
+<h3 id="2-exposing-ports-to-public-internet">2. Exposing Ports to Public Internet</h3>
+<p>This is the #1 security risk. Your Gateway should never be directly accessible from outside.</p>
+<h3 id="3-no-isolation">3. No Isolation</h3>
+<p>Run agents in Docker or VM to prevent system-wide damage from runaway code.</p>
+<h3 id="4-no-logging">4. No Logging</h3>
+<p>You can’t debug what you can’t see. Structured logs are non-negotiable.</p>
+<h3 id="5-underestimating-token-costs">5. Underestimating Token Costs</h3>
+<p>That “cheap” agent can burn through $100/month before you notice.</p>
+<h3 id="6-no-backup-strategy">6. No Backup Strategy</h3>
+<p>Configuration changes without backups = permanent disasters.</p>
+<h3 id="7-too-much-trust-too-fast">7. Too Much Trust Too Fast</h3>
+<p>Start with read-only permissions. Promote to write access only after validation.</p>
+<h3 id="8-no-kill-switch">8. No Kill Switch</h3>
+<p>When your agent goes rogue, you need a way to stop it <em>now</em>, not after it deletes your database.</p>
+<h3 id="9-ignoring-resource-limits">9. Ignoring Resource Limits</h3>
+<p>Infinite loops happen. Set hard limits on CPU, memory, and execution time.</p>
+<h3 id="10-forgetting-context-windows">10. Forgetting Context Windows</h3>
+<p>Exposing API keys in conversation history is a real risk. Sanitize your logs.</p>
+<hr>
+<h2 id="openclaw-specific-optimizations">OpenClaw-Specific Optimizations</h2>
+<p>Based on community-tested settings:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Setting</th><th>Recommended Value</th></tr></thead><tbody><tr><td>contextTokens</td><td>80000</td></tr><tr><td>compaction.mode</td><td>”safeguard”</td></tr><tr><td>heartbeat.model</td><td>cheapest</td></tr><tr><td>reserveTokensFloor</td><td>24000</td></tr></tbody></table>
+<p>This combination gives you robust operation without breaking the bank.</p>
+</div>
+<div class="lang-zh">
+<h2 id="10-个致命错误">10 个致命错误</h2>
+<p>AI Agent 24/7 运行并不难——但做错了代价很高。以下是社区踩过的坑：</p>
+<h3 id="1-没有明确边界">1. 没有明确边界</h3>
+<p>没有明确限制，Agent 會”發揮創意”，做出你意料之外的事。</p>
+<h3 id="2-端口暴露公網">2. 端口暴露公網</h3>
+<p>這是頭號安全風險。Gateway 決不應該直接從外網訪問。</p>
+<h3 id="3-沒有隔離">3. 沒有隔離</h3>
+<p>用 Docker 或 VM 運行，防止失控程式碼毀掉整個系統。</p>
+<h3 id="4-沒有日誌">4. 沒有日誌</h3>
+<p>無法debug你看不到的東西。結構化日誌是必須的。</p>
+<h3 id="5-低估-token-成本">5. 低估 Token 成本</h3>
+<p>那個”便宜”的 Agent 可能在你不注意時每月燒掉几百块。</p>
+<h3 id="6-沒有備份策略">6. 沒有備份策略</h3>
+<p>沒有備份的配置更改 = 永久災難。</p>
+<h3 id="7-太快信任">7. 太快信任</h3>
+<p>從只讀權限開始。驗證通過後再升級到寫入權限。</p>
+<h3 id="8-沒有-kill-switch">8. 沒有 Kill Switch</h3>
+<p>當你的 Agent 失控時，你需要的是<em>立刻</em>停止它，而不是等到它刪完數據庫。</p>
+<h3 id="9-忽略資源限制">9. 忽略資源限制</h3>
+<p>無限循環是會發生的。設置 CPU、內存、執行時間的硬限制。</p>
+<h3 id="10-忘記上下文窗口">10. 忘記上下文窗口</h3>
+<p>在對話歷史中暴露 API key 是真實風險。記得清理你的日誌。</p>
+<hr>
+<h2 id="openclaw-專屬優化">OpenClaw 專屬優化</h2>
+<p>根據社區驗證過的設置：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>設置項</th><th>推薦值</th></tr></thead><tbody><tr><td>contextTokens</td><td>80000</td></tr><tr><td>compaction.mode</td><td>”safeguard”</td></tr><tr><td>heartbeat.model</td><td>最便宜的模型</td></tr><tr><td>reserveTokensFloor</td><td>24000</td></tr></tbody></table>
+<p>這個組合讓你穩健運行，同時不至於燒錢。</p>
+<blockquote>
+<p>💡 記住：預防勝於治療。投入生產前先做好功課。</p>
+</blockquote>
+</div>
