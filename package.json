@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "npm run lint:frontmatter && astro build",
+    "lint:frontmatter": "node scripts/lint-frontmatter.mjs",
     "preview": "astro preview",
     "deploy": "powershell -ExecutionPolicy Bypass -File deploy.ps1"
   },
