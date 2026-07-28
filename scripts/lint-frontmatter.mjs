@@ -36,8 +36,13 @@ for (const file of files) {
 
   const text = fs.readFileSync(full, 'utf8');
 
+  // Strip UTF-8 BOM if present (some Windows editors add it; it shifts regex
+  // anchors off the start of the line).
+  const cleaned = text.replace(/^\uFEFF/, '');
+
   // Extract the first YAML frontmatter block (between the first pair of `---` lines).
-  const fmMatch = text.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+  // Handle both LF and CRLF line endings (Windows checkouts via Git autocrlf=true).
+  const fmMatch = cleaned.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   if (!fmMatch) {
     offenders.push({ file, reason: 'no frontmatter (no --- block found)' });
     continue;
