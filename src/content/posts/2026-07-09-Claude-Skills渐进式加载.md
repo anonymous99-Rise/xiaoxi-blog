@@ -6,6 +6,8 @@ tags:
   - Claude
   - Token 优化
   - Skills
+title_en: Claude Skills 渐进式加载：AI Agent 的「操作系统」设计
+title_zh: Claude Skills 渐进式加载：AI Agent 的「操作系统」设计
 ---
 
 # Claude Skills 渐进式加载：AI Agent 的「操作系统」设计

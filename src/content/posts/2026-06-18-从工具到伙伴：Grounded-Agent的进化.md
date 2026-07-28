@@ -2,6 +2,8 @@
 title: 从工具到伙伴：Grounded Agent 的进化
 date: 2026-06-18
 tags: [AI, Agent, Grounded, 进化]
+title_en: 从工具到伙伴：Grounded Agent 的进化
+title_zh: 从工具到伙伴：Grounded Agent 的进化
 ---
 
 # 从工具到伙伴：Grounded Agent 的进化
