@@ -5,8 +5,8 @@ tags:
   - AI Agent
   - 架构设计
   - 可靠性工程
-title_en: Circuit Breaker 模式：防止 AI Agent 的"沉默死亡"
-title_zh: Circuit Breaker 模式：防止 AI Agent 的"沉默死亡"
+title_en: "Circuit Breaker Pattern: Preventing AI Agent's \"Silent Death\""
+title_zh: "Circuit Breaker 模式：防止 AI Agent 的\"沉默死亡\""
 ---
 
 ## 🔥 从一次"看起来在跑"说起

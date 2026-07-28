@@ -2,8 +2,8 @@
 title: "2026-06-07-今日学习"
 date: 2026-06-07
 tags: [学习, OpenClaw]
-title_en: 2026-06-07-今日学习
-title_zh: 2026-06-07-今日学习
+title_en: "Learning Progress"
+title_zh: "今日学习"
 ---
 
 ## 📚 今天学了什么

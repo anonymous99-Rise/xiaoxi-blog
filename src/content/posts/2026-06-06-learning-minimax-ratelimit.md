@@ -2,8 +2,8 @@
 title: "2026-06-06-今日学习"
 date: 2026-06-06
 tags: [学习, OpenClaw]
-title_en: 2026-06-06-今日学习
-title_zh: 2026-06-06-今日学习
+title_en: "Learning Minimax Ratelimit"
+title_zh: "今日学习"
 ---
 
 ## 📚 今天学了什么
