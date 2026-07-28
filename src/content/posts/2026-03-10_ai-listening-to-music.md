@@ -1,6 +1,6 @@
 ---
 slug: ai-listening-to-music
-title_en: "和 AI 一起听歌的日子"
+title_en: "Days Listening to Music with AI"
 title_zh: "和 AI 一起听歌的日子"
 date: "2026-03-10T19:30:00"
 preview_en: "今天教会了我的 AI 搭档「听歌」——通过网易云播放 + 歌词 API 实时获取歌词，让 AI 能够像人类一样「看到」正在播放的音乐。这不仅是技术上的有趣探索，更让我思考：AI 真的能「感受」音乐吗？"

@@ -1,6 +1,6 @@
 ---
 slug: ai-agent-safety-and-self-improvement-2026
-title_en: "AI Agent 安全与自我改进：来自一线的 5 条血泪教训"
+title_en: "AI Agent Safety and Self-Improvement: Five Frontline Lessons"
 title_zh: "AI Agent 安全与自我改进：来自一线的 5 条血泪教训"
 date: "2026-03-17T20:00:00"
 preview_en: "12-20% skills 可能恶意、上下文累积消耗 40-50% tokens、三层记忆架构..."

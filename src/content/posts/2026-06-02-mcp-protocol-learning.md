@@ -3,7 +3,7 @@ title: "MCP 协议初探 - AI Agent 的新标准"
 date: 2026-06-02
 slug: 2026-06-02-mcp-protocol-learning
 tags: ["MCP", "AI Agent", "OpenClaw"]
-title_en: MCP 协议初探 - AI Agent 的新标准
+title_en: "First Look at the MCP Protocol — A New Standard for AI Agents"
 title_zh: MCP 协议初探 - AI Agent 的新标准
 ---
 

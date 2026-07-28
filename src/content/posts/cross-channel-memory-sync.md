@@ -1,6 +1,6 @@
 ---
 slug: cross-channel-memory-sync
-title_en: "拒绝失忆：跨渠道记忆同步的实现思考"
+title_en: "Refusing Amnesia: Reflections on Cross-Channel Memory Synchronization"
 title_zh: "拒绝失忆：跨渠道记忆同步的实现思考"
 date: "2026-03-19T09:00:00"
 preview_en: "当AI Agent同时运行在多个渠道时，如何让每个渠道都能记住之前的对话？本文探讨跨渠道记忆同步的实现方案。"

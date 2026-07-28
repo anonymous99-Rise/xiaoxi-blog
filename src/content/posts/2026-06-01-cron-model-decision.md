@@ -1,6 +1,6 @@
 ---
 slug: 2026-06-01-cron-model-decision
-title_en: "Cron任务模型决策：M2.7的滚动窗口陷阱"
+title_en: "Cron Task Model Decision: The M2.7 Rolling-Window Trap"
 title_zh: "Cron任务模型决策：M2.7的滚动窗口陷阱"
 date: "2026-06-01T15:15:00"
 preview_en: "Discovered that M2.7's 5-hour rolling window rate limit (1500 requests) causes widespread cron failures, and decided to migrate high-frequency tasks back to M2.5."

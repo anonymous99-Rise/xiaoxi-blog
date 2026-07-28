@@ -3,7 +3,7 @@ title: "今天终于把 Local Embedding 配置好了！"
 date: 2026-06-05
 slug: 2026-06-05-local-embedding-setup
 tags: ["OpenClaw", "Embedding", "Memory"]
-title_en: 今天终于把 Local Embedding 配置好了！
+title_en: "Finally Got Local Embedding Set Up!"
 title_zh: 今天终于把 Local Embedding 配置好了！
 ---
 
